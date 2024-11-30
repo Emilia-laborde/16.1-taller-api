@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="search-container">
-        <input class="form-control" type="search" placeholder="Ingresa el ID o nombre de tu personaje" id="buscarPersonajeInput">
-        <button id="buscarPersonajeBtn">Buscar Personaje</button>
 
+    <div class="search-container">
+        <input class="form-control" type="search" placeholder="Ingresa el ID del personaje" id="searchCharacterInput">
+        <button id="searchCharacterButton">Buscar Personaje</button>
     </div>
     <div class="container mt-5">
         <div id="characterCard" class="card" style="display: none;">
@@ -24,9 +24,13 @@
                 <p id="characterOrigin" class="card-text">Origen: </p>
             </div>
         </div>
-    </div>   
-    
+    </div>
+
     <div class="search-container">
+        <input class="form-control" type="search" placeholder="Ingresa el ID del episodio" id="searchEpisodeInput">
+        <button id="searchEpisodeButton">Buscar Episodio</button>
+    </div>
+    <div class="container mt-5">
         <div id="episodeCard" class="card" style="display: none;">
             <div class="card-body">
                 <h5 id="episodeName" class="card-title">Nombre del Episodio</h5>
@@ -39,3 +43,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
